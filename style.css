@@ -1,0 +1,88 @@
+/* Style global */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f; /* Gris foncé */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Titre */
+  h1 {
+    margin-top: 20px;
+  }
+  
+  /* Section stats (bonnes/mauvaises réponses) */
+  .stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .stat-item {
+    margin: 0 20px;
+  }
+  
+  /* Zone de traduction (mot + input + bouton valider) */
+  .word-to-translate {
+    margin-top: 40px;
+  }
+  
+  #currentWord {
+    font-weight: bold;
+  }
+  
+  #userAnswer {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  #validateBtn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3f7d20;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #validateBtn:hover {
+    background-color: #63aa33;
+  }
+  
+  /* Contrôles (bouton nouvelle série, nb à traduire) */
+  .controls {
+    margin-top: 40px;
+  }
+  
+  #newSeriesBtn {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #newSeriesBtn:hover {
+    background-color: #444;
+  }
+  
+  /* Historique en 3 colonnes */
+  .three-columns {
+    width: 80%;
+    margin: 40px auto;
+    border-top: 1px solid #999; 
+    padding-top: 20px;
+  
+    /* Affichage en colonnes */
+    column-count: 3;      /* Nombre de colonnes */
+    column-gap: 20px;     /* Espace entre les colonnes */
+  }
+  

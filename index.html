@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercice vocabulaire espagnol</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Exercice vocabulaire espagnol</h1>
+
+  <!-- Stats de réponses -->
+  <div class="stats">
+    <div class="stat-item">
+      <label>Nombre de bonne réponse : </label>
+      <span id="correctCount">0</span>
+    </div>
+    <div class="stat-item">
+      <label>Nombre de mauvaise réponse : </label>
+      <span id="wrongCount">0</span>
+    </div>
+  </div>
+
+  <!-- Zone de traduction -->
+  <div class="word-to-translate">
+    <p>Mot à traduire : <span id="currentWord">"mot"</span></p>
+    <input
+      type="text"
+      id="userAnswer"
+      placeholder="Tape ta réponse ici..."
+      autocomplete="off"
+    />
+    <button id="validateBtn">Valider</button>
+
+    <!-- Petit feedback ponctuel -->
+    <p id="feedback" style="color: green; margin-top: 10px;"></p>
+  </div>
+
+  <!-- Contrôles -->
+  <div class="controls">
+    <button id="newSeriesBtn">Nouvelle série</button>
+    <div>
+      <label>Nombre à traduire : </label>
+      <span id="totalWords">?</span>
+    </div>
+  </div>
+
+  <!-- Historique (3 colonnes) -->
+  <div id="history" class="three-columns">
+    <!-- Les réponses validées s'ajoutent ici -->
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
